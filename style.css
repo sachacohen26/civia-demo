@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #081B33;
+  color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #102544;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card .icon {
+  font-size: 1.6rem;
+}
+
+.card .info {
+  font-size: 0.9rem;
+}
+
+.card .info small {
+  color: #bbb;
+  font-size: 0.75rem;
+}
+
+.card.action {
+  background-color: #1F3B5C;
+  justify-content: center;
+}
+
+.suggestion {
+  background-color: #14395A;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.suggestion .icon {
+  font-size: 1.4rem;
+}
