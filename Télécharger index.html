@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CIVIA</h1>
+        <a class="btn-auth" href="#" onclick="openModal()">Connexion / Inscription</a>
+    </header>
+    <main>
+        <section class="documents">
+            <h2>Documents</h2>
+            <div class="doc-grid">
+                <div class="card"><span>🪪</span><h3>Permis de conduire</h3><p>Délivré le<br>7 avr. 2020</p></div>
+                <div class="card"><span>🌐</span><h3>Passeport</h3><p>Expire le<br>14 nov. 2027</p></div>
+                <div class="card"><span>💳</span><h3>Carte vitale</h3></div>
+                <div class="card"><span>📄</span><h3>Avis d'impôt</h3></div>
+            </div>
+        </section>
+        <section class="actions">
+            <h2>Passer à l’action</h2>
+            <div class="action-grid">
+                <div class="card"><span>➕</span><h3>Générer justificatif</h3></div>
+                <div class="card"><span>🔁</span><h3>Renouveler carte</h3></div>
+            </div>
+        </section>
+        <section class="suggestions">
+            <h2>Suggestions</h2>
+            <div class="card"><span>💡</span><p>Vous pouvez renouveler votre passeport en ligne</p></div>
+        </section>
+    </main>
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Connexion / Inscription</h2>
+            <form id="authForm">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function openModal() {
+            document.getElementById('authModal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('authModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
